@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+  <title>Radviz 可视化图</title>
+  <script type="text/javascript" src="./Radviz.js"></script>
+  <script type="text/javascript" src="./2-1.js"></script>
+</head>
+<body>
+  <div id="Container" style="width: 1000px; height: 800px"></div>
+  <script type="text/javascript">
+    console.log("data:", data);
+    var radviz = new Radviz({
+      ID: "Container",
+      data: data,
+    });
+    radviz.init(subs);
+  </script>
+</body>
